@@ -1,7 +1,7 @@
 # Citibank coding challenge
 
-This is a solution for a coding challenge that I've completed for Citibank while interviewing for the role of
-Architecture Lead.
+This repository presents the solution I developed for the Citibank coding challenge. I completed this challenge on
+22 June 2023, as part of my interview for the role of Architecture Lead.
 
 ## Requirement
 
@@ -38,21 +38,28 @@ Bands are **not** cumulative - ie. a salary of 15,000 falls in the 2.5% band, th
 
 ## How to build
 
-The project uses Gradle as a build tool. To build the project, run:
+The project requires JDK 17. It was built and tested with [Eclipse Temurin™][eclipse-temurin].
+It bundles [Gradle Wrapper][gradle-wrapper] to simplify the build process.
 
-    ./gradlew build
+```sh
+./gradlew build
+```
 
 ## How to run tests
 
 To run the tests, run:
 
-    ./gradlew test
+```sh
+./gradlew test
+```
 
 To rerun the tests when all tasks are up-to-date, run:
 
-    ./gradlew --no-build-cache cleanTest test
+```sh
+./gradlew --no-build-cache cleanTest test
+```
 
-This project uses Adarsh Ramamurthy's [Gradle Test Logger Plugin](https://github.com/radarsh/gradle-test-logger-plugin)
+This project uses Adarsh Ramamurthy's [Gradle Test Logger Plugin][gradle-test-logger-plugin]
 to produce more readable test output.
 
 ## Post interview improvements
@@ -61,3 +68,14 @@ to produce more readable test output.
    suggested during the interview.
 2. Throw an `IllegalArgumentException` when the salary is negative.
 3. Simplified tests by using `ParameterizedTest` to test tax calculation for each band.
+4. I wrote this README with my recollection of the events, so it might not be 100% accurate.
+
+<!---
+EXTERNAL LINKS
+-->
+
+[eclipse-temurin]: https://adoptium.net/temurin/releases/?version=17
+
+[gradle-wrapper]: https://docs.gradle.org/current/userguide/gradle_wrapper.html
+
+[gradle-test-logger-plugin]: https://github.com/radarsh/gradle-test-logger-plugin
