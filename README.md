@@ -64,7 +64,7 @@ to produce more readable test output.
 
 ## Post interview improvements
 
-1. Implemented the babd selection logic using  `NavigableMap#floorEntry` and `NavigableMap#ceilingEntry` as
+1. Implemented the band selection logic using  `NavigableMap#floorEntry` and `NavigableMap#ceilingEntry` as
    suggested during the interview.
 2. Throw an `IllegalArgumentException` when the salary is negative.
 3. Simplified tests by using `ParameterizedTest` to test tax calculation for each band.
